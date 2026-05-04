@@ -11,6 +11,7 @@
             --dark-green: #1e7e34;
             --white: #ffffff;
             --gray: #6c757d;
+            --accent-blue: #007bff;
         }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -59,7 +60,7 @@
         }
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 15px;
         }
         .day-card {
@@ -152,11 +153,18 @@
             font-size: 12px;
             margin-top: 3px;
         }
-        .obs {
+        .note {
             font-size: 11px;
+            color: var(--accent-blue);
+            font-weight: bold;
+            margin-top: 8px;
+            padding: 5px;
+            background: #e7f3ff;
+            border-radius: 4px;
+        }
+        .alert {
             color: #dc3545;
             font-weight: bold;
-            margin-top: 5px;
         }
     </style>
 </head>
@@ -179,18 +187,15 @@
                     <span class="subtitle">Estrutura & Confiança</span>
                     <span class="section-label">AÇÕES</span>
                     <ul>
-                        <li>Estrutura da clínica parceira</li>
-                        <li>Atendimento disponível</li>
-                        <li>Valores acessíveis</li>
-                        <li>Recepção/Profissional</li>
+                        <li>Vídeo na Clínica do Gama</li>
+                        <li>Verificar tema preferido com a equipe local</li>
+                        <li>Mostrar estrutura e atendimento</li>
                     </ul>
-                    <div class="objective-box">
-                        <strong>Objetivo:</strong> gerar confiança e credibilidade
-                    </div>
+                    <div class="note">⚠️ Próxima semana: Clínica de Santa Maria</div>
                 </div>
                 <div class="stories-footer">
                     <span class="stories-label">Stories do Dia</span>
-                    <div class="stories-content">Arte com benefício do CDT (ex: consultas com desconto)</div>
+                    <div class="stories-content">Bastidores da gravação na clínica do Gama</div>
                 </div>
             </div>
 
@@ -198,22 +203,22 @@
             <div class="day-card">
                 <div class="day-header"><h2>Terça-feira</h2></div>
                 <div class="content">
-                    <div class="video-title">Vídeo CDT 💳</div>
-                    <span class="subtitle">Educação & Conversão</span>
+                    <div class="video-title">Parceiros Nacionais 💳</div>
+                    <span class="subtitle">Cashback & Economia</span>
                     <span class="section-label">AÇÕES</span>
                     <ul>
-                        <li>Criativo CDT</li>
-                        <li>Benefícios principais</li>
-                        <li>Exames e Farmácia</li>
-                        <li>CTA WhatsApp</li>
+                        <li>Vídeo sobre Cashback</li>
+                        <li>Destaque: Drogasil</li>
+                        <li>Destaque: Ultragás</li>
+                        <li>Como economizar no dia a dia</li>
                     </ul>
                     <div class="objective-box">
-                        <strong>Objetivo:</strong> educar e converter novos clientes
+                        <strong>Objetivo:</strong> Reforçar os benefícios dos principais parceiros nacionais.
                     </div>
                 </div>
                 <div class="stories-footer">
                     <span class="stories-label">Stories do Dia</span>
-                    <div class="stories-content">Arte com benefício do CDT (ex: desconto em farmácias)</div>
+                    <div class="stories-content">Enquete: Qual parceiro você mais usa?</div>
                 </div>
             </div>
 
@@ -222,21 +227,17 @@
                 <div class="day-header"><h2>Quarta-feira</h2></div>
                 <div class="content">
                     <div class="video-title">Vídeo Refuturiza 🎓</div>
-                    <span class="subtitle">Valor Agregado</span>
+                    <span class="subtitle">Educação & Futuro</span>
                     <span class="section-label">AÇÕES</span>
                     <ul>
-                        <li>Plataforma de cursos</li>
-                        <li>Como acessar</li>
-                        <li>Cursos disponíveis</li>
-                        <li>Benefício incluso</li>
+                        <li>Vídeo Refu (Cursos e Qualificação)</li>
+                        <li>Benefícios da plataforma</li>
+                        <li>Acesso gratuito para filiados</li>
                     </ul>
-                    <div class="objective-box">
-                        <strong>Objetivo:</strong> agregar valor ao cartão (Educação)
-                    </div>
                 </div>
                 <div class="stories-footer">
                     <span class="stories-label">Stories do Dia</span>
-                    <div class="stories-content">Arte com benefício do CDT (ex: cursos gratuitos)</div>
+                    <div class="stories-content">Dica de curso rápido do dia</div>
                 </div>
             </div>
 
@@ -244,20 +245,19 @@
             <div class="day-card">
                 <div class="day-header"><h2>Quinta-feira</h2></div>
                 <div class="content">
-                    <div class="video-title">Promoção Nacional 🔥</div>
-                    <span class="subtitle">Urgência & Venda</span>
+                    <div class="video-title">Sabadão de TODOS 🏠</div>
+                    <span class="subtitle">Sorteios & Prêmios</span>
                     <span class="section-label">AÇÕES</span>
                     <ul>
-                        <li>Campanha nacional</li>
-                        <li>Prazo e urgência</li>
-                        <li>Condição especial</li>
-                        <li>CTA direto contato</li>
+                        <li class="alert">NÃO TEM CAMPANHA NACIONAL</li>
+                        <li>Material sobre o sorteio de 1 casa por semana</li>
+                        <li>Como participar do programa</li>
+                        <li>Engajamento com o sorteio</li>
                     </ul>
-                    <div class="obs">OBS: Esta semana será postado todos os dias</div>
                 </div>
                 <div class="stories-footer">
                     <span class="stories-label">Stories do Dia</span>
-                    <div class="stories-content">Arte reforçando a promoção ativa</div>
+                    <div class="stories-content">"Já imaginou ganhar uma casa?"</div>
                 </div>
             </div>
 
@@ -265,22 +265,18 @@
             <div class="day-card">
                 <div class="day-header"><h2>Sexta-feira</h2></div>
                 <div class="content">
-                    <div class="video-title">Parceiro Local 📱</div>
+                    <div class="video-title">Parceiro Local (Novo) 📱</div>
                     <span class="subtitle">Uso na Prática</span>
                     <span class="section-label">AÇÕES</span>
                     <ul>
-                        <li>Gravar em parceiro local</li>
-                        <li>Compra pelo App</li>
-                        <li>Desconto ou cashback</li>
-                        <li>Parceiro ativo no app</li>
+                        <li>Gravação de vídeo inédito</li>
+                        <li>Visita a parceiro local da região</li>
+                        <li>Demonstração de uso do app</li>
                     </ul>
-                    <div class="objective-box">
-                        <strong>Objetivo:</strong> provar o uso real do cartão
-                    </div>
                 </div>
                 <div class="stories-footer">
                     <span class="stories-label">Stories do Dia</span>
-                    <div class="stories-content">Arte com benefício do app do CDT</div>
+                    <div class="stories-content">Spoiler do parceiro de amanhã</div>
                 </div>
             </div>
 
@@ -288,22 +284,18 @@
             <div class="day-card">
                 <div class="day-header"><h2>Sábado</h2></div>
                 <div class="content">
-                    <div class="video-title">Ação Parceiro 🤝</div>
+                    <div class="video-title">Ação Parceiro (Diferente) 🤝</div>
                     <span class="subtitle">Rede Local</span>
                     <span class="section-label">AÇÕES</span>
                     <ul>
-                        <li>Vídeo externo parceiro</li>
-                        <li>Assessor de parcerias</li>
-                        <li>Mostrar estabelecimento</li>
-                        <li>Vantagem para CDT</li>
+                        <li>Vídeo novo com parceiro diferente de sexta</li>
+                        <li>Fortalecimento da rede local</li>
+                        <li>Vantagens exclusivas para o dia</li>
                     </ul>
-                    <div class="objective-box">
-                        <strong>Objetivo:</strong> fortalecer a rede de parceiros local
-                    </div>
                 </div>
                 <div class="stories-footer">
                     <span class="stories-label">Stories do Dia</span>
-                    <div class="stories-content">Arte com benefício do CDT ou parceiros</div>
+                    <div class="stories-content">Ação presencial no parceiro</div>
                 </div>
             </div>
         </div>
