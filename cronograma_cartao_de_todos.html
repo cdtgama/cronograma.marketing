@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planejamento Semanal - Cartão de TODOS</title>
+    <style>
+        :root {
+            --primary-green: #28a745;
+            --light-green: #e9f7ef;
+            --dark-green: #1e7e34;
+            --white: #ffffff;
+            --gray: #6c757d;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1d976c, #93f9b9);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            margin-bottom: 30px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+        }
+        .logo-placeholder {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .logo-placeholder span {
+            color: #ffcc00;
+            margin-left: 5px;
+        }
+        .title-section h1 {
+            margin: 0;
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .title-section p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+        .day-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        .day-header {
+            background: var(--dark-green);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .day-header h2 {
+            margin: 0;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        .content {
+            padding: 15px;
+            flex-grow: 1;
+            font-size: 13px;
+        }
+        .video-title {
+            color: var(--dark-green);
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .subtitle {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 11px;
+            color: var(--gray);
+            margin-bottom: 10px;
+            display: block;
+        }
+        .section-label {
+            font-weight: bold;
+            font-size: 11px;
+            color: var(--primary-green);
+            margin-top: 10px;
+            display: block;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 2px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 5px 0;
+        }
+        li {
+            margin-bottom: 4px;
+            position: relative;
+            padding-left: 12px;
+        }
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--primary-green);
+        }
+        .objective-box {
+            background: var(--light-green);
+            padding: 8px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-style: italic;
+            font-size: 12px;
+        }
+        .stories-footer {
+            background: #f8f9fa;
+            padding: 10px;
+            border-top: 1px solid #eee;
+        }
+        .stories-label {
+            font-weight: bold;
+            font-size: 10px;
+            color: #d63384;
+            text-transform: uppercase;
+            display: block;
+        }
+        .stories-content {
+            font-size: 12px;
+            margin-top: 3px;
+        }
+        .obs {
+            font-size: 11px;
+            color: #dc3545;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-placeholder">Cartão de <span>TODOS</span></div>
+            <div class="title-section">
+                <h1>Planejamento Semanal</h1>
+                <p>Roteiro Detalhado de Conteúdo | Segunda a Sábado</p>
+            </div>
+        </header>
+
+        <div class="grid">
+            <!-- Segunda-feira -->
+            <div class="day-card">
+                <div class="day-header"><h2>Segunda-feira</h2></div>
+                <div class="content">
+                    <div class="video-title">Vídeo Clínica 🩺</div>
+                    <span class="subtitle">Estrutura & Confiança</span>
+                    <span class="section-label">AÇÕES</span>
+                    <ul>
+                        <li>Estrutura da clínica parceira</li>
+                        <li>Atendimento disponível</li>
+                        <li>Valores acessíveis</li>
+                        <li>Recepção/Profissional</li>
+                    </ul>
+                    <div class="objective-box">
+                        <strong>Objetivo:</strong> gerar confiança e credibilidade
+                    </div>
+                </div>
+                <div class="stories-footer">
+                    <span class="stories-label">Stories do Dia</span>
+                    <div class="stories-content">Arte com benefício do CDT (ex: consultas com desconto)</div>
+                </div>
+            </div>
+
+            <!-- Terça-feira -->
+            <div class="day-card">
+                <div class="day-header"><h2>Terça-feira</h2></div>
+                <div class="content">
+                    <div class="video-title">Vídeo CDT 💳</div>
+                    <span class="subtitle">Educação & Conversão</span>
+                    <span class="section-label">AÇÕES</span>
+                    <ul>
+                        <li>Criativo CDT</li>
+                        <li>Benefícios principais</li>
+                        <li>Exames e Farmácia</li>
+                        <li>CTA WhatsApp</li>
+                    </ul>
+                    <div class="objective-box">
+                        <strong>Objetivo:</strong> educar e converter novos clientes
+                    </div>
+                </div>
+                <div class="stories-footer">
+                    <span class="stories-label">Stories do Dia</span>
+                    <div class="stories-content">Arte com benefício do CDT (ex: desconto em farmácias)</div>
+                </div>
+            </div>
+
+            <!-- Quarta-feira -->
+            <div class="day-card">
+                <div class="day-header"><h2>Quarta-feira</h2></div>
+                <div class="content">
+                    <div class="video-title">Vídeo Refuturiza 🎓</div>
+                    <span class="subtitle">Valor Agregado</span>
+                    <span class="section-label">AÇÕES</span>
+                    <ul>
+                        <li>Plataforma de cursos</li>
+                        <li>Como acessar</li>
+                        <li>Cursos disponíveis</li>
+                        <li>Benefício incluso</li>
+                    </ul>
+                    <div class="objective-box">
+                        <strong>Objetivo:</strong> agregar valor ao cartão (Educação)
+                    </div>
+                </div>
+                <div class="stories-footer">
+                    <span class="stories-label">Stories do Dia</span>
+                    <div class="stories-content">Arte com benefício do CDT (ex: cursos gratuitos)</div>
+                </div>
+            </div>
+
+            <!-- Quinta-feira -->
+            <div class="day-card">
+                <div class="day-header"><h2>Quinta-feira</h2></div>
+                <div class="content">
+                    <div class="video-title">Promoção Nacional 🔥</div>
+                    <span class="subtitle">Urgência & Venda</span>
+                    <span class="section-label">AÇÕES</span>
+                    <ul>
+                        <li>Campanha nacional</li>
+                        <li>Prazo e urgência</li>
+                        <li>Condição especial</li>
+                        <li>CTA direto contato</li>
+                    </ul>
+                    <div class="obs">OBS: Esta semana será postado todos os dias</div>
+                </div>
+                <div class="stories-footer">
+                    <span class="stories-label">Stories do Dia</span>
+                    <div class="stories-content">Arte reforçando a promoção ativa</div>
+                </div>
+            </div>
+
+            <!-- Sexta-feira -->
+            <div class="day-card">
+                <div class="day-header"><h2>Sexta-feira</h2></div>
+                <div class="content">
+                    <div class="video-title">Parceiro Local 📱</div>
+                    <span class="subtitle">Uso na Prática</span>
+                    <span class="section-label">AÇÕES</span>
+                    <ul>
+                        <li>Gravar em parceiro local</li>
+                        <li>Compra pelo App</li>
+                        <li>Desconto ou cashback</li>
+                        <li>Parceiro ativo no app</li>
+                    </ul>
+                    <div class="objective-box">
+                        <strong>Objetivo:</strong> provar o uso real do cartão
+                    </div>
+                </div>
+                <div class="stories-footer">
+                    <span class="stories-label">Stories do Dia</span>
+                    <div class="stories-content">Arte com benefício do app do CDT</div>
+                </div>
+            </div>
+
+            <!-- Sábado -->
+            <div class="day-card">
+                <div class="day-header"><h2>Sábado</h2></div>
+                <div class="content">
+                    <div class="video-title">Ação Parceiro 🤝</div>
+                    <span class="subtitle">Rede Local</span>
+                    <span class="section-label">AÇÕES</span>
+                    <ul>
+                        <li>Vídeo externo parceiro</li>
+                        <li>Assessor de parcerias</li>
+                        <li>Mostrar estabelecimento</li>
+                        <li>Vantagem para CDT</li>
+                    </ul>
+                    <div class="objective-box">
+                        <strong>Objetivo:</strong> fortalecer a rede de parceiros local
+                    </div>
+                </div>
+                <div class="stories-footer">
+                    <span class="stories-label">Stories do Dia</span>
+                    <div class="stories-content">Arte com benefício do CDT ou parceiros</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
